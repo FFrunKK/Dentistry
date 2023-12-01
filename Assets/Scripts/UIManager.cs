@@ -1,14 +1,16 @@
 using System.Collections.Generic;
+using Michsky.MUIP;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour {
     
-    [SerializeField] private Button _patientBtn;
-    [SerializeField] private Button _doctorBtn;
-    [SerializeField] private Button _scheduleBtn;
-    [SerializeField] private Button _statisticBtn;
-    [SerializeField] private Button _menuBtn;
+    // [SerializeField] private Button _patientBtn;
+    [SerializeField] private ButtonManager _doctorBtn;
+    [SerializeField] private ButtonManager _scheduleBtn;
+    [SerializeField] private ButtonManager _statisticBtn;
+    [SerializeField] private ButtonManager _menuBtn;
+    [SerializeField] private ButtonManager _patientBtn;
 
     [SerializeField] private GameObject _doctorGO;
     [SerializeField] private GameObject _patientGO;
